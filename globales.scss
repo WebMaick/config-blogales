@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-principal: #021626;
+    --color-principal-trans: rgba(2, 22, 38, 0.9);
+    --color-secundario: #073846;
+    --color-secundario-trans: rgba(7, 56, 70, 0.9);
+    --color-terciario: #072736;
+    --color-terciario-trans: rgba(7, 39, 54, 0.9);
+    --color-letra-1: #259385;
+    --color-letra: #0cd9dc;
+    --white-color: #e0ebed;
+}
+
 html{
     font-family: 'Bodoni Moda', serif;
     scroll-behavior: smooth;
@@ -29,13 +41,17 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 ul li{
     list-style: none;
 }
 
 .flex{
     display: flex;
-    align-items: center;
 }
 
 p{
@@ -45,6 +61,12 @@ p{
 [id] {
     scroll-margin-top: 2ex;
 }
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 .btn {
     display: inline-block;
