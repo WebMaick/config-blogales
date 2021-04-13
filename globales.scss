@@ -1,19 +1,11 @@
+/*
+box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+box-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
+*/
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap');
 
 *,::after,::before{
     box-sizing: border-box;
-}
-
-:root {
-    --color-principal: #021626;
-    --color-principal-trans: rgba(2, 22, 38, 0.9);
-    --color-secundario: #073846;
-    --color-secundario-trans: rgba(7, 56, 70, 0.9);
-    --color-terciario: #072736;
-    --color-terciario-trans: rgba(7, 39, 54, 0.9);
-    --color-letra-1: #259385;
-    --color-letra: #0cd9dc;
-    --white-color: #e0ebed;
 }
 
 html{
@@ -67,21 +59,55 @@ p{
     pointer-events: none;
 }
 
-
 .btn {
     display: inline-block;
-    background-color: crimson;
-    padding: 7px 13px;
-    border-radius: 5px;
+    background-color: $claro;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.3125rem;
     border: 0;
     outline: 0;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-weight: 700;
+    margin: 0.625rem 0;
     transition: background-color 0.3s ease,color 0.3s ease;
+    text-transform: uppercase;
+    &:hover{
+        background-color: darken($color: $claro, $amount: 5);
+        color: darken($color: #000, $amount: 10);
+    }
+}
+
+.btn-block{
+    width: 100%;
+}
+
+.btn-sucess{
+    background-color: $sucess;
+    color: $claro;
 
     &:hover{
-        background-color: darken($color: crimson, $amount: 5);
-        color: darken($color: white, $amount: 10);
+        background-color: darken($color: $sucess, $amount: 5);
+        color: darken($color: $claro, $amount: 10);
+    }
+}
+
+.btn-danger{
+    background-color: $error;
+    color: $claro;
+
+    &:hover{
+        background-color: darken($color: $error, $amount: 5);
+        color: darken($color: $claro, $amount: 10);
+    }
+}
+
+.btn-edit{
+    background-color: $edit;
+    color: $principal;
+
+    &:hover{
+        background-color: darken($color: $edit, $amount: 5);
+        color: darken($color: $principal, $amount: 10);
     }
 }
