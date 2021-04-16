@@ -82,12 +82,12 @@ p{
     width: 100%;
 }
 
-.btn-sucess{
-    background-color: $sucess;
+.btn-success{
+    background-color: $success;
     color: $claro;
 
     &:hover{
-        background-color: darken($color: $sucess, $amount: 5);
+        background-color: darken($color: $success, $amount: 5);
         color: darken($color: $claro, $amount: 10);
     }
 }
