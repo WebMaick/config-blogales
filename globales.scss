@@ -112,3 +112,14 @@ p{
         color: darken($color: $principal, $amount: 10);
     }
 }
+
+
+.btn-primary{
+    background-color: $primary;
+    color: $principal;
+
+    &:hover{
+        background-color: darken($color: $primary, $amount: 5);
+        color: darken($color: $principal, $amount: 10);
+    }
+}
