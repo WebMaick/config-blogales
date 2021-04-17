@@ -92,12 +92,13 @@ p{
     }
 }
 
+
 .btn-danger{
-    background-color: $error;
+    background-color: $danger;
     color: $claro;
 
     &:hover{
-        background-color: darken($color: $error, $amount: 5);
+        background-color: darken($color: $danger, $amount: 5);
         color: darken($color: $claro, $amount: 10);
     }
 }
