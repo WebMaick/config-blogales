@@ -1,6 +1,9 @@
 /*
 box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
 box-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
+
+validar nuevamente
+
 */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap');
 
@@ -91,6 +94,7 @@ p{
     }
 }
 
+
 .btn-danger{
     background-color: $danger;
     color: $claro;
@@ -107,6 +111,17 @@ p{
 
     &:hover{
         background-color: darken($color: $edit, $amount: 5);
+        color: darken($color: $principal, $amount: 10);
+    }
+}
+
+
+.btn-primary{
+    background-color: $primary;
+    color: $principal;
+
+    &:hover{
+        background-color: darken($color: $primary, $amount: 5);
         color: darken($color: $principal, $amount: 10);
     }
 }
