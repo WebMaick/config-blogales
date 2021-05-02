@@ -1,15 +1,21 @@
+
 /*
 box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
 box-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 *,::after,::before{
     box-sizing: border-box;
 }
 
 html{
-    font-family: 'Bodoni Moda', serif;
+    //font-family: 'Bodoni Moda', serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
     
@@ -48,10 +54,6 @@ ul li{
 
 p{
     margin: 0;
-}
-
-img{
-	max-width:100%;
 }
 
 [id] {
@@ -113,5 +115,15 @@ img{
     &:hover{
         background-color: darken($color: $edit, $amount: 5);
         color: darken($color: $principal, $amount: 10);
+    }
+}
+
+.btn-primary{
+    background-color: $primary;
+    color: $claro;
+
+    &:hover{
+        background-color: darken($color: $primary, $amount: 5);
+        color: darken($color: $claro, $amount: 10);
     }
 }
